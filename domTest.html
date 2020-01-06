@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dom!!!</title>
+</head>
+<body>
+	  <h1 id="one">Welcome</h1>
+	  <p>This is the welcome message.</p>
+	  <br>
+	  <h1>Technology</h1>
+	  <p id="second">This is the technology section.</p>
+	  <br>
+	  <input type="button" name="" id="btnClick" value="Click Me">
+	  <script type="text/javascript">
+		
+		//accessing DOM by getElementById
+		var text = document.getElementById("one").innerHTML;
+		alert("The first heading is " + text);
+
+		//accessing DOM by getElementsByTagName
+		var paragraphs = document.getElementsByTagName("p");
+		alert("Content in the second paragraph is " + paragraphs[1].innerHTML);
+		document.getElementById("second").innerHTML = "The orginal message is changed."
+		
+		//accessing DOM by EventListener
+		let clicked = () => alert("You clicked me!");	
+		document.getElementById("btnClick").addEventListener("click" , clicked);
+
+
+
+
+	</script>
+</body>
+</html>

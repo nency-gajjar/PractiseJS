@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>	
+<body>
+	<script type="text/javascript">
+		
+		var names = ["Nency" , "Minaxi" , "Sagar" , "Bhoomi" , "Riya"];
+		var surname = ["Gajjar" , "Macchi" , "Mange" , "Sarariya" , "Raval"];
+		var age = [21,22,23,24,25];
+
+		//Geeting values
+		for(let val in names)
+			console.log(val);
+
+		for(let val in names)
+			console.log(names[val]);
+
+		//Ignore keys
+		for(let val of names)
+			console.log(val);
+
+		var info = names.concat(age,surname);
+			console.log(info);
+
+
+		//entries method
+		for(let x of names.entries()){
+			console.log(x);
+		}
+
+
+		//every  end filter method
+		function checkAge(age){
+			return age > 18;
+		}
+		console.log(age.filter(checkAge));
+		console.log(age.every(checkAge));
+
+		//push method
+		names.push("Khushbu");
+		console.log("After push : " + names);
+
+		names.pop();
+		console.log("After pop : " + names);
+		
+		//finding lengh
+		console.log("Length of the array is : " + names.length);
+
+
+		let array = names.findIndex((val, inx) => {
+          console.log("Index of : " +val, inx)
+         });
+
+		console.log(names.lastIndexOf());
+		console.log(names.indexOf('Nency'));
+
+		//reverse
+		let array1 = [1,2,3];
+		console.log(array.reverse);
+
+		//sort
+		array1.sort();
+		console.log(array);
+
+		//fill method
+		console.log(names.fill("Digesh" , 3));
+
+
+	</script>
+</body>
+</html>

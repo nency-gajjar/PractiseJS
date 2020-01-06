@@ -1,0 +1,22 @@
+<script type="text/javascript">
+	
+	function doSum(){
+	   		let sum = 0 ;
+		    var inputArray = [];
+		    var size = 100; //Maximum Array size
+		    for(var i=0; i<size; i++) {
+				//Taking Input from user
+				inputArray[i] =+ prompt('Enter Element ' + (i+1));
+				if (!inputArray[i]) break; 
+			}
+			sum = inputArray.reduce((total ,amount)=> total + amount,0);
+			alert("sum : " + sum);
+	   	}
+	    
+	    doSum();
+	
+
+	// const numbers = [2,4,-5,7,45,1,5];
+	// const sum = numbers.reduce((total, amount) => total + amount); 
+
+</script>

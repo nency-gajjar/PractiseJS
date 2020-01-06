@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		let age = [10,20,30,40,50];
+			
+		let obj = {
+        name: "Bacancy",
+        address: "Thaltej"
+	    }
+
+	    //function delcaration
+	    function sayHi(){
+	    	alert("Hey");
+	    	console.log("inside hi");
+	    }
+
+	    let func = sayHi;
+	    func();
+	    sayHi();
+
+	    //function expression
+	    let sayHello = function(){
+	    	alert('Hello');
+	    	console.log("inside Hello");
+	    }
+
+	    let func2  = sayHello ;
+	    func2();
+	    sayHello();
+
+	    //Arrow Function Syntex
+	 	//let func = (arg1, arg2, ...argN) => expression  
+	 	//let func = function(arg1, arg2, ...argN) {
+		//	return expression;
+		//	};
+		//ex : let sayHi = () => alert('hey');
+
+
+
+		// function checkAge(age){
+		// 	return age >= 18;
+		// }
+		// console.log(age.find(checkAge));
+
+		//find() on object
+		// function checkObj(obj){
+	 //    	return obj
+	 //    }
+	 //    console.log(obj.find());
+
+
+	  // function multiplyNum(x, y, z) {  
+   //      return x * y * z;  
+   //  }  
+  
+   //  function multiplyNum(x, y) {  
+   //      return x * y;  
+   //  }  
+   //  var result = multiplyNum(1, 2, 3);  
+   //  document.write(result);  
+
+
+	</script>
+</body>
+</html>
